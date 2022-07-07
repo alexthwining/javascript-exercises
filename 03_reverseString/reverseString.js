@@ -1,22 +1,11 @@
 const reverseString = function(str) {
-	let words = str.split(' ');
-	console.log(words.length);
-	let rev = "";
-	if(words.length > 1) {
-	    for(let i=0; i < words.length; i++) {
-	        let wrd = words[i].split('');
-		
-	    }
+    let words = str.split('');
+    let res = "";
+    while(words.length > 0) {
+        res = res + words.pop();
+    }
 
-	}
-	else {
-	    let wrd = words[0].split('');
-	    for(let i=0; i < wrd.length; ) {
-	    rev = rev + wrd.pop();
-	}
-
-
-	return rev;
+    return res;
 
 };
 
